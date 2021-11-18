@@ -1,3 +1,10 @@
+!pip install datasets==1.13.3
+!pip install transformers==4.11.3
+!pip install huggingface_hub==0.1
+!pip install torchaudio
+!pip install librosa
+!pip install jiwer
+
 from datasets import load_dataset, load_metric
 
 common_voice_train = load_dataset("common_voice", "pt", split="train+validation")
